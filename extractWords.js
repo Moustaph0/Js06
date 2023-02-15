@@ -1,5 +1,7 @@
-function extractWords(str) {
-    const container = (str.split(" "));
+str = "Voici l'exemple de la chaines";
+function extractWords(chaine) {
+    const container = (chaine.split(" "));
     console.log(container);
 }
-module.exports = extractWords("Voici l'exemple de la chaines");
+extractWords(str);
+module.exports = extractWords;
