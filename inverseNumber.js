@@ -5,4 +5,5 @@ function inverseNumber(nombre) {
         console.log(1 / nombre);
     }
 }
-module.exports = inverseNumber(4);
+inverseNumber(0);
+module.exports = inverseNumber;
