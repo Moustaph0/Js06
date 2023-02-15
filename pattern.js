@@ -1,14 +1,4 @@
-function pattern(){
-    for(let i=1; i < 6; i++) {
-        for(let j=1; j <= i; j++) {
-            process.stdout.write(' *');
-        }
-        process.stdout.write('\n');
-    }
-}
-module.exports = pattern();
-
-function Pyramide(n, c) { // n = niveaux hiérarchiques; c = caractère utilisé
+function pattern(n, c) { // n = niveaux hiérarchiques; c = caractère utilisé
     // Nb de colonnes =  Nb d'espaces + nb de caractères "*"
     // Chaque nouvelle ligne gagne 2 "*"
     let nbColonnes = 1 + 2 * (n - 1), nbSpaceChar = nbColonnes - 1, output = "";
@@ -20,4 +10,6 @@ function Pyramide(n, c) { // n = niveaux hiérarchiques; c = caractère utilisé
     }
     return output;
 }
-console.log(Pyramide(4, "*"));
+console.log(pattern(4, "*"));
+
+module.exports = pattern;
